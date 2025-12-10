@@ -218,10 +218,10 @@ import ReservedKeywords from '@Common/models/services/ReservedKeywords'
     const showTableModal = (): void => {
         const currentTablesCount = projectStore.project.tables.length
 
-        if(!window.licenseIsActive() && currentTablesCount > 15) {
+        /* if(!window.licenseIsActive() && currentTablesCount > 15) {
             window.showLicenseModal("This project has more than 15 tables (including Laravel default tables). Please activate your license to add unlimited tables.")
             return
-        }
+        } */
 
         reset()
         
