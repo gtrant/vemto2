@@ -218,13 +218,13 @@
     }
 
     const checkLicenseAndTablesCount = () : boolean => {
-        if(!window.licenseIsActive() && projectStore.project.tables.length > 15) {
+       /* if(!window.licenseIsActive() && projectStore.project.tables.length > 15) {
             window.showLicenseModal(
                 "This project has more than 15 tables (including Laravel default tables). Please activate your license to generate code."
             )
 
             return false
-        }
+        }*/
 
         return true
     }
